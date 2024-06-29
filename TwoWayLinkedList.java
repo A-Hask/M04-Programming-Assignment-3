@@ -191,13 +191,13 @@ public class TwoWayLinkedList<E> implements MyList<E> {
       return new LinkedListIterator<E>(this.head);
     }
 
-   public void listIterator(){
-     return java.util.ListIterator<E>;
-   }
+//    public void listIterator(){
+//      return java.util.ListIterator<E>;
+//    }
 
-   public void listIterator(int index) {
-     return java.util.ListIterator<E>;
-   }
+//    public void listIterator(int index) {
+//      return java.util.ListIterator<E>;
+//    }
 
     
   }
