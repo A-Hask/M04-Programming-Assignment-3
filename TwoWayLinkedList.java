@@ -1,16 +1,14 @@
-public class MyLinkedList<E> implements MyList<E> {
+public class TwoWayLinkedList<E> implements MyList<E> {
     private Node<E> head, tail;
-    private int size = 0; // Number of elements in the list
- 
-    /** Create an empty list */
-    public MyLinkedList() {
+    private int size = 0;
+
+    public TwoWayLinkedList() {
     }
 
-    /** Create a list from an array of objects */
-    public MyLinkedList(E[] objects) {
+    public TwoWayLinkedList(E[] objects) {
       for (int i = 0; i < objects.length; i++)
         add(i, objects[i]);
-    }
+      }
 
     /** Return the head element in the list */
     public E getFirst() {
@@ -192,11 +190,14 @@ public class MyLinkedList<E> implements MyList<E> {
     public java.util.Iterator<E> iterator() {
       return new LinkedListIterator<E>(this.head);
     }
- 
-  
 
-  /** Return the number of elements in this list */
-  public int size() {
-    return size;
+   public void listIterator(){
+     return java.util.ListIterator<E>;
+   }
+
+   public void listIterator(int index) {
+     return java.util.ListIterator<E>;
+   }
+
+    
   }
-}
